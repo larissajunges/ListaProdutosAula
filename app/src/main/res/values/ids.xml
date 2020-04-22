@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="textViewNome" type="id" />
+    <item name="textViewPreco" type="id" />
+    <item name="imagemProduto" type="id" />
 </resources>

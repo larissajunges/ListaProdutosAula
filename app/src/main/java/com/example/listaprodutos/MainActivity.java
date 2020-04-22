@@ -1,11 +1,14 @@
 package com.example.listaprodutos;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity {
-
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
         listView=findViewById(R.id.listView);
         ArrayList<Produto> arrayList = new ArrayList<Produto>();
 
-        ProdutosController produtoController = new ProdutosController();
+        ProdutoController produtoController = new ProdutoController();
 
         ProdutoAdapter adapter = new ProdutoAdapter(
                 getApplicationContext(),
-                R.layout.list_item_produto,
+                R.layout.listaprodutos,
                 produtoController.PRODUTO
         );
 
